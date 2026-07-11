@@ -56,6 +56,12 @@ nav a{color:#fff;text-decoration:none;font-weight:500;font-size:15px;}
   50%{transform:translateY(8px);opacity:1;}
 }
 
+@media (max-width:480px){
+  .hero-cta{right:14px;bottom:10px;gap:4px;}
+  .btn-cta{padding:8px 14px;font-size:13px;border-radius:6px;}
+  .scroll-arrow{width:16px;height:16px;}
+}
+
 /* MENU SECTION */
 .menu-section{position:relative;z-index:1;padding:60px 40px;text-align:center;}
 .menu-section h2{font-size:38px;font-weight:800;margin-bottom:36px;}
