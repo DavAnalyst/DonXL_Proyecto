@@ -17,10 +17,10 @@ body::before{
 header{
   position:relative;z-index:1;
   display:flex;align-items:center;justify-content:space-between;
-  background:var(--bg-dark);color:#fff;padding:9px 40px;
+  background:var(--bg-dark);color:#fff;padding:8px 40px;
 }
 .logo{display:flex;align-items:center;}
-.logo img{height:67px;width:auto;display:block;}
+.logo img{height:60px;width:auto;display:block;}
 nav{position:absolute;left:50%;transform:translateX(-50%);}
 nav ul{display:flex;gap:28px;list-style:none;}
 nav a{color:#fff;text-decoration:none;font-weight:500;font-size:15px;}
