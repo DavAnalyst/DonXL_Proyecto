@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DonXL | Ordena online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <a href="#inicio" class="logo"><img src="assets/Logo/logo.png" alt="DonXL"></a>
+    <nav>
+      <ul>
+        <li>
+          <a href="#ordenar" class="nav-order-link">
+            Ordenar
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <img src="assets/hero/HeroPrincipalv2-cropped.jpeg" alt="DonXL - Perros Calientes" class="hero-img">
+    <div class="hero-cta">
+      <a href="#ordenar" class="btn-cta">Hacer un pedido</a>
+      <svg class="scroll-arrow" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </section>
+
+  <section class="menu-section" id="ordenar">
+    <h2>Menú</h2>
+    <div class="menu-grid">
+      <div class="menu-card" data-hotdog="doble-pecado" style="background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.75)), url('assets/menu/doble-pecado.png');">
+        <span class="menu-name">Doble Pecado</span>
+        <button type="button" class="menu-add" aria-label="Agregar Doble Pecado"><span class="menu-add-icon">+</span><span class="menu-add-label">Agregar</span></button>
+      </div>
+      <div class="menu-card" data-hotdog="don-peperoni" style="background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.75)), url('assets/menu/don-peperoni.png');">
+        <span class="menu-name">Don Pepperoni</span>
+        <button type="button" class="menu-add" aria-label="Agregar Don Pepperoni"><span class="menu-add-icon">+</span><span class="menu-add-label">Agregar</span></button>
+      </div>
+      <div class="menu-card" data-hotdog="el-bandido" style="background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.75)), url('assets/menu/el-bandido.png');">
+        <span class="menu-name">El Bandido</span>
+        <button type="button" class="menu-add" aria-label="Agregar El Bandido"><span class="menu-add-icon">+</span><span class="menu-add-label">Agregar</span></button>
+      </div>
+      <div class="menu-card" data-hotdog="el-que-resuelve" style="background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.75)), url('assets/menu/el-que-resuelve.png');">
+        <span class="menu-name">El Que Resuelve</span>
+        <button type="button" class="menu-add" aria-label="Agregar El Que Resuelve"><span class="menu-add-icon">+</span><span class="menu-add-label">Agregar</span></button>
+      </div>
+      <div class="menu-card" data-hotdog="rancherito-xl" style="background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.75)), url('assets/menu/rancherito-xl.png');">
+        <span class="menu-name">Rancherito XL</span>
+        <button type="button" class="menu-add" aria-label="Agregar Rancherito XL"><span class="menu-add-icon">+</span><span class="menu-add-label">Agregar</span></button>
+      </div>
+    </div>
+
+    <h3 class="menu-subheading">Bebidas</h3>
+    <div class="drinks-grid" id="drinksGrid"></div>
+  </section>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+      <img src="" alt="" class="modal-img" id="modalImg">
+      <div class="modal-body">
+        <h3 id="modalName"></h3>
+        <p class="modal-tagline" id="modalTagline"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+
+        <div class="modal-group">
+          <span class="modal-label">Cantidad de salchichas</span>
+          <div class="pill-group" id="qtyGroup"></div>
+        </div>
+
+        <div class="modal-group">
+          <span class="modal-label">Salsas (gratis)</span>
+          <div class="chip-group" id="saucesGroup"></div>
+        </div>
+
+        <div class="modal-group">
+          <span class="modal-label">¿Algún Ingrediente Extra?</span>
+          <div class="chip-group" id="addonsGroup"></div>
+        </div>
+
+        <div class="modal-group">
+          <span class="modal-label">Instrucciones para la caja</span>
+          <textarea id="modalInstructions" placeholder="Ej: sin cebolla" rows="2"></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <span class="modal-price" id="modalPrice">Selecciona la cantidad</span>
+          <button type="button" class="btn-cta modal-add" id="modalAdd" disabled>Agregar al pedido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="social-section">
+    <h2>Síguenos en @don_xl_villavicencio</h2>
+    <a href="https://www.instagram.com/don_xl_villavicencio" target="_blank" rel="noopener" class="instagram-link" aria-label="Instagram de DonXL">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+      </svg>
+    </a>
+  </section>
+
+  <div class="cart-bar" id="cartBar">
+    <span class="cart-summary" id="cartSummary">0 hot dogs · $0</span>
+    <div class="cart-bar-actions">
+      <button type="button" class="cart-review-btn" id="reviewBtn">Revisar pedido</button>
+      <button type="button" class="btn-cta cart-order-btn" id="checkoutBtn">Hacer pedido</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="cartModalOverlay">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="cartModalClose" aria-label="Cerrar">&times;</button>
+      <div class="modal-body">
+        <h3>Tu pedido</h3>
+        <div class="cart-items-list" id="cartItemsList"></div>
+        <div class="modal-footer">
+          <span class="modal-price" id="cartModalTotal"></span>
+          <button type="button" class="btn-cta cart-order-btn" id="cartModalCheckout">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="paymentModalOverlay">
+    <div class="modal-card payment-modal-card">
+      <button type="button" class="modal-close" id="paymentModalClose" aria-label="Cerrar">&times;</button>
+      <div class="modal-body">
+        <h3>Método de pago</h3>
+        <div class="pill-group" id="paymentGroup">
+          <button type="button" class="pill payment-pill" data-method="Efectivo">Efectivo</button>
+          <button type="button" class="pill payment-pill" data-method="Nequi">Nequi</button>
+          <button type="button" class="pill payment-pill" data-method="Bancolombia">Bancolombia</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-cta cart-order-btn" id="paymentConfirmBtn" disabled>Enviar pedido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 DonXL — Todos los derechos reservados</p>
+    <p>Desarrollado por <a href="https://www.davanalyst.com" target="_blank" rel="noopener">Davanalyst</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

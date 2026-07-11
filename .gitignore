@@ -1,0 +1,26 @@
+# Dependencias
+node_modules/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Originales / duplicados sin usar en el sitio (se quedan solo en local)
+assets/Doble Pecado.png
+assets/Don Peperoni.png
+assets/El Bandido.png
+assets/El Que Resuelve.png
+assets/Rancherito XL.png
+assets/Logo/logo png.png
+assets/hero/don xl.pdf
+assets/hero/hero.png
+assets/hero/hero-top.png
+assets/hero/HeroPrincipal.png
+assets/hero/HeroPrincipalv2.jpeg
+assets/gaseosas/Coca Cola 400ml.webp
+assets/gaseosas/Cocacola 1.5L.jpg
+assets/gaseosas/Cocacola 1L.png
+assets/gaseosas/Cocacola 2.5L.jpg
+assets/gaseosas/Cocacola 3L.jpg
+assets/gaseosas/jugo-hit 500ml.jpg
+assets/gaseosas/Sprite 1.5L.jpg
