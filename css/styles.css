@@ -57,6 +57,7 @@ nav a{color:#fff;text-decoration:none;font-weight:500;font-size:15px;}
 }
 
 @media (max-width:480px){
+  header{padding:8px 12px;}
   .hero-cta{right:14px;bottom:10px;gap:4px;}
   .btn-cta{padding:8px 14px;font-size:13px;border-radius:6px;}
   .scroll-arrow{width:16px;height:16px;}
