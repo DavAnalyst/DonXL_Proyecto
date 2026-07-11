@@ -60,6 +60,7 @@ nav a{color:#fff;text-decoration:none;font-weight:500;font-size:15px;}
   .hero-cta{right:14px;bottom:10px;gap:4px;}
   .btn-cta{padding:8px 14px;font-size:13px;border-radius:6px;}
   .scroll-arrow{width:16px;height:16px;}
+  .social-section h2{font-size:20px;word-break:break-word;}
 }
 
 /* MENU SECTION */
