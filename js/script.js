@@ -182,9 +182,8 @@ function closeModal() {
   currentHotdog = null;
 }
 
-document.querySelectorAll(".menu-add").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const card = btn.closest(".menu-card");
+document.querySelectorAll(".menu-card").forEach((card) => {
+  card.addEventListener("click", () => {
     openModal(card.dataset.hotdog);
   });
 });
